@@ -1,0 +1,19 @@
+nav {
+  background-color: rgba(0, 0, 0, 0.81);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+
+.logo img {
+  height: auto;
+  width: 8em;
+}

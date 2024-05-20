@@ -1,7 +1,15 @@
 export const Navbar = () => {
+  const Logo = "/svgs/digitalist_logo.svg";
+
   return (
     <nav>
-      <h1>Navbar</h1>
+      <div className="logo">
+        <img src={Logo} alt="Digitalist Logo" />
+      </div>
+      <div className="searchbox">
+        <button>Searchicon</button>
+        <button>MENY</button>
+      </div>
     </nav>
   );
 };
