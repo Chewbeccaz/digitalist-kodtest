@@ -1,0 +1,56 @@
+.header {
+  position: relative;
+  background-image: url("../images/small_meeting_Dollarphotoclub_86379057_0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.446);
+}
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.read-more {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.81);
+  width: 30%;
+  min-height: 20vh;
+  color: white;
+  margin: 0 auto;
+  padding: 1em 2em 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.read-more h2 {
+  font-size: 1.3em;
+  margin-bottom: 8px;
+}
+
+.read-more p {
+  font-size: 1em;
+  margin-bottom: 12px;
+  text-align: center;
+}
