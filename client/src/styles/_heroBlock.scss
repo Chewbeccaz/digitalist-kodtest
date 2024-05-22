@@ -1,16 +1,29 @@
 .hero-logo {
-  height: 4em;
-  padding: 1.5em;
+  height: 6em;
+  padding: 0.5em;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2em;
 }
 
 .html-box,
 .css-box,
 .js-box {
-  padding: 2em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.html-box,
+.css-box,
+.js-box p,
+h2 {
+  margin: 0.3em;
 }
