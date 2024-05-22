@@ -1,6 +1,4 @@
-import { IoMenuOutline } from "react-icons/io5";
-import { IoMdSearch } from "react-icons/io";
-import { useState } from "react";
+import { Menu } from "./Menu";
 import { Searchbox } from "./Searchbox";
 
 export const Navbar = () => {
@@ -13,9 +11,7 @@ export const Navbar = () => {
       </div>
       <div className="icons">
         <Searchbox />
-        <button>
-          <IoMenuOutline />
-        </button>
+        <Menu />
       </div>
     </nav>
   );
