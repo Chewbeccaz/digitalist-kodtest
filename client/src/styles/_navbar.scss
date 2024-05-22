@@ -1,3 +1,10 @@
+// .navbar-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+// }
+
 nav {
   background-color: rgba(0, 0, 0, 0.81);
   display: flex;
@@ -16,6 +23,11 @@ nav {
 .logo img {
   height: auto;
   width: 8em;
+}
+
+.icons {
+  display: flex;
+  position: relative;
 }
 
 .icons button {
