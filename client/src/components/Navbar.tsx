@@ -1,5 +1,5 @@
-import { IoMenuOutline } from "react-icons/io5";
-import { IoMdSearch } from "react-icons/io";
+import { Menu } from "./Menu";
+import { Searchbox } from "./Searchbox";
 
 export const Navbar = () => {
   const Logo = "/svgs/digitalist_logo.svg";
@@ -10,12 +10,8 @@ export const Navbar = () => {
         <img src={Logo} alt="Digitalist Logo" />
       </div>
       <div className="icons">
-        <button>
-          <IoMdSearch />
-        </button>
-        <button>
-          <IoMenuOutline />
-        </button>
+        <Searchbox />
+        <Menu />
       </div>
     </nav>
   );
