@@ -27,3 +27,17 @@
 h2 {
   margin: 0.3em;
 }
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .html-box,
+  .css-box,
+  .js-box {
+    flex-direction: column;
+    margin-bottom: 12px;
+  }
+}

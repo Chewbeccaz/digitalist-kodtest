@@ -10,7 +10,7 @@ export const HeroBlock = () => {
       <div className="container">
         <div className="html-box">
           <img className="hero-logo" src={htmlLogo} alt="HTML Logo" />
-          <h2>Html5</h2>
+          <h2>HTML5</h2>
           <p>
             HTML5 is a markup language used for structuring presenting content
             on the World Wide Web. It is the fifth and current major version of

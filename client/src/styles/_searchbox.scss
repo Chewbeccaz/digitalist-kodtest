@@ -40,13 +40,17 @@
   border-bottom: 1px solid transparent;
   background-color: transparent;
   transition: max-height 0.8s ease-in-out, opacity 0.8s ease-in-out,
-    border-bottom 0.8s ease-in-out;
+    border-bottom 0s ease-in-out;
   color: rgba(255, 255, 255, 0.856);
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.853);
     opacity: 1;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
   }
 }
 
