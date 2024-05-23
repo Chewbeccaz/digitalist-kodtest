@@ -1,4 +1,5 @@
 import { Navbar } from "./Navbar";
+import { Scroll } from "./Scroll";
 
 export const Header = () => {
   return (
@@ -15,6 +16,7 @@ export const Header = () => {
           </p>
           <button className="common-btn">Read more</button>
         </div>
+        <Scroll />
       </div>
     </>
   );
