@@ -1,3 +1,5 @@
+@use "../index" as Index;
+
 .menu-container {
   display: flex;
   align-items: center;
@@ -12,8 +14,6 @@
   position: absolute;
   top: 100%;
   left: 65%;
-  //   min-height: 150px;
-  //   width: 60%;
   background-color: rgba(0, 0, 0, 0.721);
   opacity: 0;
   transform: translateY(-10px);
@@ -25,7 +25,7 @@
     margin: 0;
 
     li {
-      padding: 16px;
+      padding: Index.$gutter * 2;
       text-align: center;
       cursor: pointer;
 

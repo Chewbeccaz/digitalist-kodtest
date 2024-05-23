@@ -1,61 +1,80 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+//VARIABLES:
 $primary-color: white;
 $secondary-color: #3fbea3;
-$text-color: rgba(0, 0, 0, 0.671);
-// $gutter: 8px; //Gör variabel för spacing.
 
-// #root {
-//   max-width: 1280px;
-//   margin: 0 auto;
-//   padding: 2rem;
-//   text-align: center;
-// }
+$primary-text: rgba(0, 0, 0, 0.671);
+$secondary-text: rgb(252, 244, 244);
 
-//Tar bort gapet upptill.
+$primary-font: "Outfit", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+
+$gutter: 8px;
+$padding: 10px;
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($properties) {
+  transition: $properties;
+}
+
+@mixin box-shadow($x, $y, $blur, $color) {
+  box-shadow: $x $y $blur $color;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   background-color: $primary-color;
+  font-family: $secondary-font;
   margin: 0;
 }
 
-.common-btn {
-  background-color: $secondary-color;
-  color: $primary-color;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  font-size: 1em;
-  margin: 10px;
-  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.5);
-}
-
-.common-btn:hover {
-  background-color: darken($secondary-color, 10%);
-}
-
+//TYPOGRAPHY
 h2 {
-  color: $text-color;
+  color: $primary-text;
   font-size: 2em;
-  font-family: "Outfit", sans-serif;
+  font-family: $primary-font;
 }
 
 h3 {
   color: $primary-color;
-  font-family: "Rotobo", sans-serif;
+  font-family: $secondary-font;
   font-weight: 300;
-  font-size: 1.3em;
-  margin: 10px;
+  // font-size: 1.3em;
+  margin: $gutter + 2;
 }
 
 p {
-  color: $text-color;
+  color: $primary-text;
   font-size: 0.8em;
-  font-family: "Roboto", sans-serif;
+  font-family: $secondary-font;
   font-weight: 500;
+}
+
+//BUTTONS
+.common-btn {
+  background-color: $secondary-color;
+  color: $primary-color;
+  padding: $padding 2 * $padding;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: $gutter + 2;
+  @include box-shadow(2px, 3px, 2px, rgba(0, 0, 0, 0.5));
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
 }
