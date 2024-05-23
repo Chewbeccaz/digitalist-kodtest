@@ -1,15 +1,15 @@
+@use "../index" as Index;
+
 nav {
   background-color: rgba(0, 0, 0, 0.721);
-  display: flex;
+  @include Index.flex-center;
   justify-content: space-between;
-  align-items: center;
   padding: 0 2em;
   color: white;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
+  @include Index.flex-center;
   height: auto;
 }
 

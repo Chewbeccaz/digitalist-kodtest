@@ -1,3 +1,5 @@
+@use "../index" as Index;
+
 .header {
   position: relative;
   background-image: url("../images/small_meeting_Dollarphotoclub_86379057_0.jpg");
@@ -37,16 +39,15 @@
   color: white;
   margin: 0 auto;
   padding: 1em 2em 1em;
-  display: flex;
+  @include Index.flex-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
 }
 
-.read-more h2 {
+.read-more h3 {
   font-size: 1.3em;
-  margin-bottom: 8px;
+  text-align: center;
+  margin-bottom: Index.$gutter;
 }
 
 .read-more p {

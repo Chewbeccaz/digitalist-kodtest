@@ -1,6 +1,8 @@
+@use "../index" as Index;
+
 .hero-logo {
   height: 6em;
-  padding: 0.5em;
+  padding: Index.$gutter;
 }
 
 .container {
@@ -14,10 +16,8 @@
 .css-box,
 .js-box {
   padding: 1em;
-  display: flex;
+  @include Index.flex-center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
@@ -38,6 +38,6 @@ h2 {
   .css-box,
   .js-box {
     flex-direction: column;
-    margin-bottom: 12px;
+    margin-bottom: Index.$gutter * 2;
   }
 }
